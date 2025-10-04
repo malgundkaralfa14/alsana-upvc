@@ -4,8 +4,16 @@ import { Shield, Award, Users, Clock, ArrowRight, CheckCircle } from 'lucide-rea
 export default function Home() {
   return (
     <div className="pt-20">
-      <section className="relative bg-gradient-to-br from-primary to-navy text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className="relative text-white py-20 md:py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-navy/90"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">

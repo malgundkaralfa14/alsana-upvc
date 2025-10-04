@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 export default function Services() {
   return (
     <div className="pt-20">
-      <section className="bg-gradient-to-br from-primary to-navy text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative text-white py-16 md:py-24 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/5691543/pexels-photo-5691543.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-navy/90"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
             <p className="text-xl text-gray-100 leading-relaxed">
