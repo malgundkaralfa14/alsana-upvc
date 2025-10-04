@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <img src="/logo.png" alt="Alsana" className="h-16 w-auto mb-4 brightness-0 invert" />
+            <img src="/logo.png" alt="Alsana" className="h-16 w-auto mb-4"  style={{background:'white', borderRadius:'5px'}}/>
             <p className="text-gray-300 text-sm leading-relaxed">
               Leading provider of premium UPVC windows and doors. Quality craftsmanship and exceptional service.
             </p>
